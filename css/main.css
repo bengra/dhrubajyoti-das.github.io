@@ -1,0 +1,188 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic);
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.site-header {
+    position: relative;
+    min-height: 31em;
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.site-header canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+article {
+    position: relative;
+    z-index: 1;
+    
+    padding-top: 5em;
+    width: 65%;
+    margin: 0 auto;
+}
+
+h1 {
+    background: rgba(256,256,256,0.5);
+    padding: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+a {
+    font-style: italic;
+    color: #333333;
+}
+
+.git {
+    padding: 1em;
+    background: #1FB4DD;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    top: -2em;
+    color: #ffffff;
+
+}
+
+.git p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.skills {
+    background: rgb(217, 228, 249);
+    height: 100%;
+}
+
+
+footer {
+
+    background: #f4f3ee;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
