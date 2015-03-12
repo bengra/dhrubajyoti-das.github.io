@@ -8,6 +8,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Noto Sans', sans-serif;
+    text-align: center;
 }
 
 ::-moz-selection {
@@ -120,7 +121,12 @@ footer {
 
 
 
-
+.demo {
+    width: 4%;
+    background: #ccc;
+    padding: 1em;
+    text-align: center;
+}
 
 
 

@@ -1,0 +1,93 @@
+@import "_reset.less";
+@import "_grid.less";
+@column-width: 60;
+@gutter-width: 20;
+@columns: 12;
+
+
+div.container {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header {
+	.clearfix();
+	border-bottom: 20px solid #cccccc;
+}
+.logo {
+	.column(3);
+	margin: 0;
+}
+
+.topbar {
+	.column(9);
+	margin: 0;
+	width: 740px;
+	ul {
+		//padding-left: 230px;
+		display: block;
+		width: 100%;
+		text-align: right;
+	}	
+	ul > li {
+		display: inline;
+
+	}
+	.associates {
+		line-height: -2em;
+	}
+	p {
+		display: block;
+		text-align: right;
+		width: 100%;
+		margin-bottom: 0;
+	}
+	nav {
+		display: block;
+		width: 100%;
+		background: #cccccc;
+	}
+}
+
+.main {
+	.column(12);
+	.clearfix();
+	margin-top: 2em;
+	margin-bottom: 2em;
+	article {
+		.column(9);
+		margin: 0;
+		border: 1px solid #cccccc;
+	}
+	aside {
+		.column(3);
+		margin: 0;
+	}
+}
+
+p {
+	margin-bottom: 1.4em;
+}
+.click {
+	background: #cccccc;
+	padding: 1em;
+	margin: 1em;
+}
+footer {
+	margin-top: 2em;
+	.column(12);
+	.home {
+		.column(3);
+		margin: 0;
+	}
+	.gs {
+		.column(3);
+	}
+	.tools {
+		.column(3);
+	}
+	.aboutus {
+		.column(3);
+		margin: 0;
+	}
+}
