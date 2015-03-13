@@ -1,78 +1,159 @@
 @import "reset.less";
 @import "grid.less";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
 @column-width: 60;
 @gutter-width: 20;
 @columns: 12;
+@total-width: 100%;
 
+* {
+	box-sizing: border-box;
+}
+
+
+a { text-decoration: none; color: #676761; }
+a:hover { text-decoration: underline; }
+.clear { clear: both; }
+.ui-tabs-hide { display: none; }
+br.clear { margin: 0px; padding: 0px; }
+
+h1, h2, h3, h4, h5, h6 { padding-bottom: 5px; color: #676761; letter-spacing: -1px; line-height: 1em; font-weight: normal; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #676761; }
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+p { padding-bottom: 10px; line-height: 24px; }
+strong { font-weight: bold; color: #1c1c1c; }
+cite, em, i { font-style: italic; }
+pre, code { font-family: Courier New, monospace; margin-bottom: 10px; }
+ins { text-decoration: none; }
+sup, sub { height: 0; line-height: 1; position: relative; vertical-align: baseline; }
+sup { bottom: 0.8em; }
+sub { top: 0.3em; }
+dl { margin: 0 0 1.5em 0; }
+dl dt { font-weight: bold; }
+dd  { margin-left: 1.5em;}
+blockquote  { margin: 1.5em; padding: 1em; color: #666666; background: #e6e6e6; font-style: italic; border: 1px solid #dcdcdc; }
+	blockquote p { padding-bottom: 0px; }
+
+body {
+	background: #ffffff url('../img/bg.jpg') no-repeat fixed center center;
+	background-size: cover;
+	color: #888888;
+	font-size: 13px;
+	line-height: 20px;
+	font-family: 'Open Sans', sans-serif;
+
+}
 
 div.container {
-	width: 960px;
+	max-width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
-}
-header {
-	.clearfix();
-	border-bottom: 20px solid #cccccc;
-}
-.logo {
-	.column(3);
-	margin: 0;
+	background-color: #ffffff;
+	box-shadow: 0 0 12px rgba(0,0,0,0.15);
 }
 
 .topbar {
-	.column(9);
-	margin: 0;
-	width: 740px;
-	ul {
-		//padding-left: 230px;
-		display: block;
-		width: 100%;
-		text-align: right;
-	}	
+	width: 100%;
+	height: 38px;
+	background-color: rgb(31, 32, 54);
+	color: #ffffff;
 	ul > li {
 		display: inline;
+			margin-top: 1em;
+			padding: 1em 1% 0.5em 1%;
+			line-height: 34px;
+	}
 
+}
+	.lefttop {
+		.column(6);
 	}
-	.associates {
-		line-height: -2em;
+	.righttop {
+		.column(6);
+		ul {
+			text-align: right;
+		}
 	}
-	p {
-		display: block;
-		text-align: right;
-		width: 100%;
-		margin-bottom: 0;
+
+
+header {
+	background-image: none, -webkit-linear-gradient(bottom,rgba(255,255,255,0.75) 0px,rgba(255,255,255,0.8) 10px,rgba(255,255,255,0.86) 20px,rgba(255,255,255,0.9) 30px,rgba(255,255,255,0.94) 40px,rgba(255,255,255,0.98) 50px,rgba(255,255,255,0.99) 60px,#ffffff 70px);
+	background-color: transparent;
+  background-repeat: repeat;
+  background-position: center top;
+  border-bottom: none;
+  box-shadow: 0px 1px 0px 0px rgba(5,38,57,0.05);
+  padding: 3em 0 5em 0;
+  position: relative;
+  z-index: 101;
+}
+.branding {
+	.column(3);
+	font-weight: 700;
+
+
+}
+nav {
+	.column(9);
+	> a {
+		font-size: 1.5em;
+		line-height: 1.799em;
+		padding-right: 2%;
 	}
-	nav {
-		display: block;
-		width: 100%;
-		background: #cccccc;
+	a:hover {
+		color: #1FB4DD;
 	}
 }
 
 .main {
-	.column(12);
 	.clearfix();
-	margin-top: 2em;
+	position: relative;
+	z-index: 1;
+	margin-top: -40px;
+	height: 470px;
 	margin-bottom: 2em;
+	background: #ffffff url('../img/bg-01.jpg') no-repeat fixed center center;
+	background-size: cover;
 	article {
-		.column(9);
-		margin: 0;
-		border: 1px solid #cccccc;
+		.column(8);
+		margin-top: 80px;
+		> h1 {
+			color: #ffffff;
+			margin-bottom: 20px;
+
+		}
+		> p {
+			color: #ffffff;
+			font-size: 1.2em;
+			margin-bottom: 20px;
+
+		}
+		.click {
+			color: #ffffff;
+			font-size: 1.3em;
+			margin-top: 30px;
+			border: 2px solid rgba(255,255,255,0.75);
+			text-decoration: none;
+			padding: 1em;
+			display: block;
+			text-align: center;
+			width: 50%;
+		}
 	}
 	aside {
-		.column(3);
+		.column(4);
 		margin: 0;
+		margin-top: 80px;
 	}
 }
 
-p {
-	margin-bottom: 1.4em;
-}
-.click {
-	background: #cccccc;
-	padding: 1em;
-	margin: 1em;
-}
+
+
 footer {
 	margin-top: 2em;
 	.column(12);
@@ -91,3 +172,5 @@ footer {
 		margin: 0;
 	}
 }
+
+
