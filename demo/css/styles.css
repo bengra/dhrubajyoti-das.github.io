@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+@import "fontello.css";
 html,
 body {
   border: 0;
@@ -279,6 +280,7 @@ div.container {
   text-align: right;
 }
 header {
+  *zoom: 1;
   background-image: none, -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.75) 0px, rgba(255, 255, 255, 0.8) 10px, rgba(255, 255, 255, 0.86) 20px, rgba(255, 255, 255, 0.9) 30px, rgba(255, 255, 255, 0.94) 40px, rgba(255, 255, 255, 0.98) 50px, rgba(255, 255, 255, 0.99) 60px, #ffffff 70px);
   background-color: transparent;
   background-repeat: repeat;
@@ -288,6 +290,14 @@ header {
   padding: 3em 0 5em 0;
   position: relative;
   z-index: 101;
+}
+header:before,
+header:after {
+  content: "";
+  display: table;
+}
+header:after {
+  clear: both;
 }
 .branding {
   display: inline;
@@ -363,19 +373,79 @@ nav a:hover {
   margin: 0;
   margin-top: 80px;
 }
-footer {
-  margin-top: 2em;
+.ourservice {
+  *zoom: 1;
+}
+.ourservice:before,
+.ourservice:after {
+  content: "";
+  display: table;
+}
+.ourservice:after {
+  clear: both;
+}
+.ourservice h1 {
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+  color: #888888;
+}
+.ourservice ul > li {
+  text-align: center;
+  padding: 25px 0 25px 0;
+  background-color: #f5f5f5;
+}
+.ourservice ul > li > i {
+  font-size: 33px;
+  color: #1fd9fb;
+}
+.ourservice ul > li > i:hover {
+  color: #04c0e3;
+}
+.ourservice .fone {
   display: inline;
   float: left;
-  width: 97.91666667%;
+  width: 22.91666667%;
   margin: 0 1.04166667%;
+}
+.ourservice .ftwo {
+  display: inline;
+  float: left;
+  width: 22.91666667%;
+  margin: 0 1.04166667%;
+}
+.ourservice .fthree {
+  display: inline;
+  float: left;
+  width: 22.91666667%;
+  margin: 0 1.04166667%;
+}
+.ourservice .ffour {
+  display: inline;
+  float: left;
+  width: 22.91666667%;
+  margin: 0 1.04166667%;
+}
+footer {
+  *zoom: 1;
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 25px 0 30px 0;
+  background-color: #26282c;
+}
+footer:before,
+footer:after {
+  content: "";
+  display: table;
+}
+footer:after {
+  clear: both;
 }
 footer .home {
   display: inline;
   float: left;
   width: 22.91666667%;
   margin: 0 1.04166667%;
-  margin: 0;
 }
 footer .gs {
   display: inline;
@@ -394,5 +464,7 @@ footer .aboutus {
   float: left;
   width: 22.91666667%;
   margin: 0 1.04166667%;
-  margin: 0;
+}
+.ho {
+  color: #ffffff;
 }
